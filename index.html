@@ -1,32 +1,31 @@
-<!DOCTYPE hmtl>
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <script src = "alarm.js" defer></script>
-    <style>
-    body {
-        background-color: linen;
-      }
-      button {
-        display: flex;
-        margin: 10px auto;
-        background-color: black;
-        color: white;
-        border-radius: 10px;
-        height: 25px;
-      }
-      
-      div {
-        height: 100vh;
-        width: 100vw;
-        background-color: rgb(247, 58, 58);
-      }
-      </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm Clock</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <button onclick = "alarm(11,20,0)" id="button">setAlarm</button>
-    <div id="demo"></div>
+    <div class="container">
+        <h1>Set Your Alarm</h1>
+        <form id="alarmForm">
+            <div class="form-group">
+                <label for="hours">Hours:</label>
+                <input type="number" id="hours" min="0" max="23" required>
+            </div>
+            <div class="form-group">
+                <label for="minutes">Minutes:</label>
+                <input type="number" id="minutes" min="0" max="59" required>
+            </div>
+            <div class="form-group">
+                <label for="seconds">Seconds:</label>
+                <input type="number" id="seconds" min="0" max="59" required>
+            </div>
+            <button type="submit">Set Alarm</button>
+        </form>
+        <p id="message"></p>
+    </div>
+    <script src="alarm.js"></script>
 </body>
-
 </html>

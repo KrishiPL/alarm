@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #333; /* Dark background color */
+    color: #fff; /* White text color for contrast */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #222; /* Slightly lighter dark background */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    max-width: 300px;
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #fff; /* White color for the heading */
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #bbb; /* Light gray color for labels */
+}
+
+input {
+    width: calc(100% - 16px); /* Adjust width to account for padding */
+    padding: 8px;
+    border: 1px solid #555; /* Darker border for input fields */
+    border-radius: 4px;
+    background-color: #444; /* Dark background for input fields */
+    color: #fff; /* White text inside input fields */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+input:focus {
+    border-color: #777; /* Slightly lighter border on focus */
+    outline: none; /* Remove default focus outline */
+}
+
+button {
+    background-color: #007bff; /* Blue background for button */
+    color: #fff; /* White text color for the button */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+#message {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #0f0; /* Green color for messages */
+}
